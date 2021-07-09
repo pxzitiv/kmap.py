@@ -1,34 +1,3 @@
-Skip to content
-Search or jump to…
-
-Pull requests
-Issues
-Marketplace
-Explore
- 
-@pxzitiv 
-vijaybharath99
-/
-Karnaugh-Map
-1
-24
-Code
-Issues
-Pull requests
-Actions
-Projects
-Wiki
-Security
-Insights
-Karnaugh-Map/K_map_complete_2_3_4_var.py /
-@vijaybharath99
-vijaybharath99 Add files via upload
-Latest commit 5d63325 on 21 May 2020
- History
- 1 contributor
-578 lines (541 sloc)  21.5 KB
-  
-#K_Map for 2 inputs.
 def inp2_k_map(mt,nip):
     for i in range(50):print("-",end='')
     print()
