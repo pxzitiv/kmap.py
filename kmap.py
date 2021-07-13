@@ -1,3 +1,24 @@
+   
+    
+    
+    
+    
+    
+    
+    
+    
+    
+
+
+    
+    
+    
+    
+    
+    
+    
+    
+    
 def inp2_k_map(mt,nip):
     for i in range(50):print("-",end='')
     print()
