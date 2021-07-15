@@ -1,4 +1,33 @@
-def inp2_k_map(mt,nip):
+#main
+ask='y'
+while ask=='y':
+    for _ in range(50):print("-",end='')
+    print()
+    nfinp=int(input("Enter number of Inputs(2,3,4) : "))
+    mimastr=input("Enter 'SOP' for SOP(Minterms) or 'POS' for POS(Maxterms) : ").lower()
+    if mimastr=='pos':
+        mima=2
+    elif mimastr=='sop':
+        mima=1
+    if mima==1:
+        mt=list(map(int,input("Enter Minterms : ").split()))
+    else:
+        mt=list(map(int,input("Enter Maxterms : ").split()))
+    if nfinp==2:
+        inp2_k_map(mt,mima)
+    elif nfinp==3:
+        inp3_k_map(mt,mima)
+    elif nfinp==4:
+        inp4_k_map(mt,mima)
+    else:
+        print("You committed some mistake, please check the inputs next time.")
+    ask=input("Enter 'y' for another K-Map or 'n' to exit : ").lower()
+    for i in range(25):print("--",end='')
+    print()
+
+
+#K_Map for 2 inputs.
+    def inp2_k_map(mt,nip):
     for i in range(50):print("-",end='')
     print()
     prnt=input("Enter Variables with single space(eg:A B) : ").split(" ")
@@ -549,29 +578,3 @@ def inp3_k_map(mt,nip):
     for i in range(50):print("*",end='')
     print()
 
-#main
-ask='y'
-while ask=='y':
-    for _ in range(50):print("-",end='')
-    print()
-    nfinp=int(input("Enter no of Inputs(2,3,4) : "))
-    mimastr=input("Enter 'SOP' for SOP(Minterms) or 'POS' for POS(Maxterms) : ").lower()
-    if mimastr=='pos':
-        mima=2
-    elif mimastr=='sop':
-        mima=1
-    if mima==1:
-        mt=list(map(int,input("Enter Minterms : ").split()))
-    else:
-        mt=list(map(int,input("Enter Maxterms : ").split()))
-    if nfinp==2:
-        inp2_k_map(mt,mima)
-    elif nfinp==3:
-        inp3_k_map(mt,mima)
-    elif nfinp==4:
-        inp4_k_map(mt,mima)
-    else:
-        print("You committed some mistake, please check the inputs next time.")
-    ask=input("Enter 'y' for another K-Map or 'n' to exit : ").lower()
-    for i in range(25):print("--",end='')
-    print()
