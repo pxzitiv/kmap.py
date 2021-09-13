@@ -1,7 +1,7 @@
 #main
 ask='y'
 while ask=='y':
-    for _ in range(50):print("-",end='')
+    for _ in rangef(50):print("-",end='')
     print()
     nfinp=int(input("Enter number of Inputs(2,3) : "))
     mimastr=input("Enter 'SOP' for SOP(Minterms) or 'POS' for POS(Maxterms) : ").lower()
